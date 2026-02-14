@@ -1,153 +1,102 @@
 # Empirical-Asset-Pricing-and-Volatility-Analysis
 
-Financial Time Series Analysis of Two Equity Indices
+This project performs statistical and time series analysis on two U.S. equity indices using daily market data. The objective is to analyze return behavior, volatility characteristics, distribution properties, and basic technical indicators using Python.
 
-This project performs a statistical and time series analysis of two major U.S. stock market indices using daily data from Yahoo Finance. The analysis focuses on return behavior, distributional properties, correlation structure, and basic technical indicators.
+---
 
-Overview
+## Overview
 
-The script:
+This script:
 
-Downloads daily historical price data using yfinance
+- Downloads daily historical data using `yfinance`
+- Computes daily percentage and log returns
+- Generates descriptive statistics
+- Calculates skewness and kurtosis
+- Measures correlation between indices
+- Computes rolling moving averages
+- Visualizes price and return dynamics
 
-Computes arithmetic and log returns
+The dataset includes more than one trading year (252+ observations) to ensure statistical relevance.
 
-Generates descriptive statistics
+---
 
-Measures skewness and kurtosis
+## Methods
 
-Calculates rolling moving averages
+### Data Collection
+Daily closing prices are retrieved directly from Yahoo Finance.
 
-Visualizes price dynamics and trends
+### Return Calculations
+- Arithmetic daily returns
+- Log (continuously compounded) returns
 
-Explores volatility characteristics
+### Statistical Analysis
+- Mean
+- Median
+- Variance
+- Standard deviation
+- Skewness
+- Kurtosis
+- Correlation
 
-The dataset contains more than 252 daily observations to ensure statistical relevance.
+### Technical Indicators
+- 20-day rolling moving averages for trend analysis
 
-Objectives
+### Visualization
+- Price time series plots
+- Moving average overlays
+- Return distribution insights
 
-The goal of this analysis is to:
+---
 
-Compare return distributions between two equity indices
+## Technologies Used
 
-Evaluate volatility and risk characteristics
+- Python
+- pandas
+- numpy
+- matplotlib
+- scipy
+- statsmodels
+- arch
 
-Assess correlation between indices
+---
 
-Examine distribution shape (normality, skewness, fat tails)
+## Installation
 
-Explore trend-following indicators using moving averages
+Install dependencies with:
 
-Methods & Tools
-Libraries Used
-
-yfinance
-
-pandas
-
-numpy
-
-matplotlib
-
-scipy
-
-statsmodels
-
-arch (for volatility modeling)
-
-Statistical Measures Computed
-
-Mean
-
-Median
-
-Variance
-
-Standard Deviation
-
-Skewness
-
-Kurtosis
-
-Correlation
-
-Both percentage returns and log returns are analyzed.
-
-Key Features
-1. Data Retrieval
-
-Daily closing prices are downloaded directly from Yahoo Finance.
-
-2. Return Calculations
-
-Percentage daily returns
-
-Log returns (continuously compounded returns)
-
-3. Descriptive Statistics
-
-Summary statistics help compare central tendency, dispersion, and higher moments of the distributions.
-
-4. Distribution Analysis
-
-Skewness identifies asymmetry
-
-Kurtosis measures tail risk
-
-Interpretation of whether distributions are mesokurtic or leptokurtic
-
-5. Rolling Moving Averages
-
-20-day moving averages are computed and plotted to:
-
-Identify trends
-
-Illustrate smoothing effects
-
-Demonstrate basic technical trading concepts
-
-6. Visualization
-
-Time series plots show:
-
-Daily index levels
-
-Moving average overlays
-
-Return dynamics
-
-What This Project Demonstrates
-
-Understanding of financial return construction
-
-Ability to analyze non-normal return distributions
-
-Interpretation of volatility and tail risk
-
-Application of technical indicators
-
-Proficiency in Python for financial data analysis
-
-How to Run
-
-Install required packages:
-
+```bash
 pip install yfinance pandas numpy matplotlib scipy statsmodels arch
+```
 
+---
 
-Run the notebook or script in a Python environment.
+## How to Run
 
-Potential Extensions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/yourrepo.git
+   ```
 
-GARCH volatility modeling
+2. Navigate into the project directory:
+   ```bash
+   cd yourrepo
+   ```
 
-Value at Risk (VaR) estimation
+3. Run the notebook or Python script.
 
-Sharpe ratio comparison
+---
 
-Hypothesis testing for mean differences
+## Key Takeaways
 
-Autocorrelation diagnostics
+This project demonstrates:
 
-Backtesting moving average strategies
+- Financial return construction and interpretation
+- Analysis of non-normal return distributions
+- Volatility and tail risk evaluation
+- Basic technical indicator implementation
+- Applied quantitative finance using Python
 
+---
+
+**Author:** Miles Choquette  
+M.S. Quantitative Finance | Computer Science Background
